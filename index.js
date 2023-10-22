@@ -89,7 +89,7 @@ app.put('/products/:id',async(req,res)=>{
   console.log(result)
 })
 
-    // user data 
+    // user data post
 
 
     app.post('/users',async(req,res)=>{
@@ -99,7 +99,7 @@ app.put('/products/:id',async(req,res)=>{
      res.send(result)
   })
 
-  // cart user 
+  // cart user get
 
 
 
@@ -120,7 +120,7 @@ app.get('/users/:uid',async(req,res)=>{
   res.send(result)
 })
 
-//delete
+//delete card
 app.delete('/users/:uid',async(req,res)=>{
   const uid= req.params.uid;
   console.log(uid)
